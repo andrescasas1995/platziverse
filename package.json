@@ -1,0 +1,34 @@
+{
+  "name": "platziverse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple IoT Platform - API",
+  "main": "server.js",
+  "scripts": {
+    "test": "ava --verbose",
+    "start": "NODE_ENV=production node server.js",
+    "start-dev": "set DEBUG=platziverse:* & nodemon server.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrescasas1995/platziverse.git"
+  },
+  "author": "Andres Casas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrescasas1995/platziverse/issues"
+  },
+  "homepage": "https://github.com/andrescasas1995/platziverse#readme",
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "nodemon": "^2.0.2",
+    "standard": "^14.3.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
+  }
+}
